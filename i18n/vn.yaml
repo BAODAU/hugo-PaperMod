@@ -1,0 +1,16 @@
+- id: prev_page
+  translation: "đi lui"
+
+- id: next_page
+  translation: "đi tới"
+
+- id: read_time
+  translation:
+    one : "1 phút"
+    other: "{{ .Count }} phút"
+
+- id: toc
+  translation: "mục lục"
+
+- id: translations
+  translation: "dịch"

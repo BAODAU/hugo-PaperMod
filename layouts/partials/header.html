@@ -2,6 +2,9 @@
 {{- if (not .Site.Params.disableThemeToggle) }}
 {{- /*  theme is light  */}}
 {{- if (eq .Site.Params.defaultTheme "light") }}
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
